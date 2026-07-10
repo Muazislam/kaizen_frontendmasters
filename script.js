@@ -1,12 +1,15 @@
-console.log(10+3)
-console.log(10/3)
-console.log(23333+3423)
-console.log((2+3)*4)
+console.log("Kyle" + " " + "Cook");
+console.log("apple" == "apple");
+console.log("Apple" != "apple");
 
-console.log(85==92)
+console.log("apple" < "banana")
 
-console.log(85!=92)
+console.log(typeof 42)
+console.log(typeof "Hello")
+console.log(typeof true)
 
-console.log(85<92)
+console.log(typeof 1 == typeof 2)
 
-console.log(92>=90)
+console.log(true || false) //or
+console.log(true && false) //AND
+console.log(!true)
