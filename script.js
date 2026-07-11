@@ -22,3 +22,13 @@ console.log(score)
 
 score = 30
 console.log(score)
+
+            // Creating const
+
+const MY_NAME = "Basit Ali"
+
+MY_NAME = "Muaz"    // ❌ TypeError: Assignment to constant variable
+
+const TEXT = "Const cannot be declared without a value. It needs a default value"
+
+const message   // ❌ SyntaxError: Missing initializer in const declaration
