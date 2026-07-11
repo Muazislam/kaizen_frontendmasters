@@ -1,15 +1,11 @@
-console.log("Kyle" + " " + "Cook");
-console.log("apple" == "apple");
-console.log("Apple" != "apple");
+            // Creating my first variable
 
-console.log("apple" < "banana")
+let variableOne
+console.log(variableOne)
+let name = "Sally"
+console.log(name)
 
-console.log(typeof 42)
-console.log(typeof "Hello")
-console.log(typeof true)
+let age = "25"
+console.log(age)
 
-console.log(typeof 1 == typeof 2)
 
-console.log(true || false) //or
-console.log(true && false) //AND
-console.log(!true)
