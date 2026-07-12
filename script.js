@@ -81,10 +81,29 @@
 // };
 
 
-const sum = (a,b) => {
-        return a + b
+// const sum = (a,b) => {
+//         return a + b
+// }
+
+// const sumShort = (a,b) => a +b
+
+// console.log (sumShort(1,2))
+
+
+// when to use arrown function
+
+function processData(z, callback) {
+        callback(x)
 }
+// with normaal function (verbose)
+processData(10, function (variable) {
+        console.log(variable)
+})
 
-const sumShort = (a,b) => a +b
+// With arrow function (concise)
+processData(10, (variable) => {
+        console.log(variable)
+})
 
-console.log (sumShort(1,2))
+// Or even shorter on one line
+processData(10, (variable) => console.log(variable))
