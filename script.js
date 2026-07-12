@@ -23,13 +23,25 @@
 
         // callback function
 
-function sumCallback(a,b, callback) {
-    let sum = a + b
-    callback(sum)
+// function sumCallback(a,b, callback) {
+//     let sum = a + b
+//     callback(sum)
+// }
+
+// function handleSum(sum) {
+//     console.log(sum)
+// }
+
+// sumCallback(1,2, handleSum)
+
+
+function printName (firstName, LastName, callback) {
+    let fullName = callback + " " + firstName + " " + LastName
+    console.log(fullName)
 }
 
-function handleSum(sum) {
-    console.log(sum)
+function prependName (text) {
+    prependName("hello")
 }
 
-sumCallback(1,2, handleSum)
+printName("Muaz", "Babar", prependName)
