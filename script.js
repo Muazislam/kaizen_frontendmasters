@@ -29,13 +29,13 @@
 // sum(number, num2)
 
 
-function additionOfNumbers(a,b,c,d) {
-    addition = a + b + c + d
-    return addition
-}
+// function additionOfNumbers(a,b,c,d) {
+//     addition = a + b + c + d
+//     return addition
+// }
 
-let Basit = 10.0
-let barcode2 = 10.0
+// let Basit = 10.0
+// let barcode2 = 10.0
 
-let sum = additionOfNumbers(Basit, barcode2, 3,4)
-console.log(sum)
+// let sum = additionOfNumbers(Basit, barcode2, 3,4)
+// console.log(sum)
