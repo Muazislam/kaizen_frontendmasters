@@ -35,13 +35,28 @@
 // sumCallback(1,2, handleSum)
 
 
-function printName (firstName, LastName, callback) {
-    const fullName = firstName + " " + LastName
-    console.log(callback(fullName))
+// function printName (firstName, LastName, callback) {
+//     const fullName = firstName + " " + LastName
+//     console.log(callback(fullName))
+// }
+
+// function prependName (name) {
+//     return "hello " + name
+// }
+
+// printName("Muaz", "Babar", prependName)
+
+        // Arrow function
+
+// convert a normal function to an arrow function
+
+function sum(a,b) {
+        return a + b
 }
 
-function prependName (name) {
-    return "hello " + name
+const sumArrow = (a,b) => {
+        return a + b
 }
 
-printName("Muaz", "Babar", prependName)
+console.log(sum(1,2))
+console.log(sumArrow(1,2))
