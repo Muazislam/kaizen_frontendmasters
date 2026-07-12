@@ -36,12 +36,12 @@
 
 
 function printName (firstName, LastName, callback) {
-    let fullName = callback + " " + firstName + " " + LastName
-    console.log(fullName)
+    const fullName = firstName + " " + LastName
+    console.log(callback(fullName))
 }
 
-function prependName (text) {
-    prependName("hello")
+function prependName (name) {
+    return "hello " + name
 }
 
 printName("Muaz", "Babar", prependName)
