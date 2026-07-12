@@ -21,3 +21,15 @@
 
 // callFunction(printName)
 
+        // callback function
+
+function sumCallback(a,b, callback) {
+    let sum = a + b
+    callback(sum)
+}
+
+function handleSum(sum) {
+    console.log(sum)
+}
+
+sumCallback(1,2, handleSum)
