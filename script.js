@@ -1,18 +1,9 @@
-// ===== NaN (Not a Number) ======
+// =========== Equality check ==============
 
-// When a person tries to convert a letter into number
-const result = parseInt("Hello");
+// THe   ==  makes type coercion
+console.log(1 == "1") // true (converts string "1" to number 1)
 
-console.log(result);
-console.log(typeof result);
+console.log(0 == false)
+console.log(" " == false)
 
-// Nan is not false. In Javascript, it is not considered to be false
 
-console.log(result == NaN); // nan is never equal to anything
-
-const a = parseInt("Hello")
-const b = 3
-
-// The correct way to check  
-console.log(isNaN (a))
-console.log(isNan(b))
