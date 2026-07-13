@@ -1,38 +1,24 @@
-// Hoisting
+// Closure 
 
-// Function Hoisting in Action
+// const a = 1
 
-// console.log(sum(1, 2));
-
-// function sum(a, c) {
-//   return a + c;
+// function print() {
+//   console.log(a) // Accessing variable from outer scope
 // }
 
-// Arrow functions are not hoisted
+// print() // Prints: 1
 
 
-// ❌ This doesn't work with arrow functions
-console.log(sumArrow(1, 2));
+// Closures with Dynamic Values
 
-const sumArrow = (a, b) => {
-  return a + b;
-};
+// let a = 1
+
+// function print() {
+//         console.log(a)
+// }
+
+// a = 2
+// print()
 
 
-// Main program logic (easy to read)
-processUserData()
-displayResults()
-cleanup()
-
-// Helper functions (implementation details)
-function processUserData() {
-  console.log("Processing...")
-}
-
-function displayResults() {
-  console.log("Displaying results...")
-}
-
-function cleanup() {
-  console.log("Cleaning up...")
-}
+// Functions Inside Functions
