@@ -1,109 +1,43 @@
-// functions as variables
+// Global scopes
 
-// function printName(name) {
-//     console.log(name)
+// function sayHi() {
+//    const result = "Hi"
+//    console.log(result)
 // }
 
-// console.log(printName)
+// const result = "Bye"
+// sayHi("Hi")
+// console.log(result)
 
-// passing function to other variables
-
-// function printName(name) {
-//     console.log(name)
+// function myFunction() {
+//   const x = 5
 // }
 
-// function callFunction(x) {
+// const x = 10
+// myFunction()
 
-//     x("Kyle")
+// inner scope
 
+// const a = 1;
+
+// function func() {
+//   const b = 2;
+//   console.log(a);
+//   console.log(b);
 // }
 
-// callFunction(printName)
+// // outer scope is not possible
 
-// callback function
-
-// function sumCallback(a,b, callback) {
-//     let sum = a + b
-//     callback(sum)
+// function func() {
+//         const b = 2
 // }
 
-// function handleSum(sum) {
-//     console.log(sum)
-// }
+// func()
+// console.log(b)
 
-// sumCallback(1,2, handleSum)
-
-// function printName (firstName, LastName, callback) {
-//     const fullName = firstName + " " + LastName
-//     console.log(callback(fullName))
-// }
-
-// function prependName (name) {
-//     return "hello " + name
-// }
-
-// printName("Muaz", "Babar", prependName)
-
-// Arrow function
-
-// convert a normal function to an arrow function
-
-// function sum(a,b) {
-//         return a + b
-// }
-
-// const sumArrow = (a,b) => {
-//         return a + b
-// }
-
-// console.log(sum(1,2))
-// console.log(sumArrow(1,2))
-
-// single parameter shortcut
-
-// const printName = (name) => {
-//         console.log(name)
-
-// }
-
-// const printNameShort = name => {
-//         console.log(name)
-// }
-
-// multiple parameters
-
-// const sayHi = () => {
-//   console.log("Hi");
-// };
-
-// const add = (x, y) => {
-//   return x + y;
-// };
-
-
-// const sum = (a,b) => {
-//         return a + b
-// }
-
-// const sumShort = (a,b) => a +b
-
-// console.log (sumShort(1,2))
-
-
-// when to use arrown function
-
-function processData(z, callback) {
-        callback(x)
+const name = "Kyle"; //Global scope
+function sayHi() {
+  console.log(name);
 }
-// with normaal function (verbose)
-processData(10, function (variable) {
-        console.log(variable)
-})
 
-// With arrow function (concise)
-processData(10, (variable) => {
-        console.log(variable)
-})
-
-// Or even shorter on one line
-processData(10, (variable) => console.log(variable))
+sayHi();
