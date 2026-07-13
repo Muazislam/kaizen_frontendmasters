@@ -55,3 +55,32 @@ if (true) {
 {
   const x = 2; // New block scope
 }
+
+//======================================
+//Function scope
+
+function myFunction() {
+  const x = 5;
+}
+
+//=====================================
+// Nested Scope
+
+let c = 3; // Global scope
+
+{
+  // Outer block scope
+  let a = 1;
+  {
+    // Inner block scope
+    let b = 2;
+
+    console.log(a); // can see out scope
+    console.log(b); // can see own scope
+    console.log(c); // can see global scope
+  }
+
+  console.log(a); // can see own scope
+  console.log(c); // can see global scope
+  console.log(b);
+}
