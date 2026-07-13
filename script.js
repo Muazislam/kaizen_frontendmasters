@@ -1,22 +1,29 @@
-// Problem with var
+// =================  Type Coercion  =================
 
-// Var is function scope
-// which means that the function can access
-// the code from outside the curly braces in which it was declared
-// The inner code is accessible.
-// This is not possible because aaccessing data happens for
-// outside variales.
+// ============== Expllcit Type Coercion ===============
 
-const functionVar = () => {
-  {
-    var a = 1;
-  }
-  console.log(a);
-};
+let a = 4;
+let b = "2";
 
-let b = 2;
-functionVar();
-const functionLet = () => {
-  console.log(b);
-};
-functionLet();
+let c = a + b; // this gives 42 string.
+console.log(c);
+
+let d = a + parseInt(b); // this adds the number
+console.log(d);
+
+
+//============Parce INT vs Parse FLOAT
+
+let decimal = "1.4"
+
+console.log(parseInt(decimal))
+console.log(parseFloat(decimal))
+
+//==============Number to string
+
+let number = 3.233
+
+const stringNum = number.toString()
+
+console.log(stringNum)
+console.log(typeof stringNum)
