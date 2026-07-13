@@ -62,3 +62,18 @@
 //===================================
 //===================================
 
+// =========Practice
+// Solution from Muaz
+/*
+function createGreeter(greeting) {
+  function inner(name) {
+    console.log(greeting + " " + name);
+    
+  }
+  return inner;
+}
+
+const greetFunc = createGreeter("Hi")
+greetFunc("Muaz")
+*/
+
