@@ -76,4 +76,14 @@ function createGreeter(greeting) {
 const greetFunc = createGreeter("Hi")
 greetFunc("Muaz")
 */
+function createGreeter(greeting) {
+        return (name) => {
+                console.log(greeting + " " + name)
+        }
+}
 
+const sayhello = createGreeter("Hello")
+const sayHi = createGreeter("Hi")
+
+sayhello("Kyle")
+sayHi("Sarah")
