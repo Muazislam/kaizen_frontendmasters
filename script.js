@@ -35,52 +35,79 @@
 // func()
 // console.log(b)
 
-const name = "Kyle"; //Global scope
-function sayHi() {
-  console.log(name);
-}
+// const name = "Kyle"; //Global scope
+// function sayHi() {
+//   console.log(name);
+// }
 
-sayHi();
+// sayHi();
 
-//======================================
+// //======================================
 
-function myFunction() {
-  const x = 3; //New block scope
-}
+// function myFunction() {
+//   const x = 3; //New block scope
+// }
 
-if (true) {
-  const x = 1; // New block scope
-}
+// if (true) {
+//   const x = 1; // New block scope
+// }
 
-{
-  const x = 2; // New block scope
-}
+// {
+//   const x = 2; // New block scope
+// }
 
-//======================================
-//Function scope
+// //======================================
+// //Function scope
 
-function myFunction() {
-  const x = 5;
-}
+// function myFunction() {
+//   const x = 5;
+// }
 
-//=====================================
-// Nested Scope
+// //=====================================
+// // Nested Scope
 
-let c = 3; // Global scope
+// let c = 3; // Global scope
 
-{
-  // Outer block scope
-  let a = 1;
-  {
-    // Inner block scope
-    let b = 2;
+// {
+//   // Outer block scope
+//   let a = 1;
+//   {
+//     // Inner block scope
+//     let b = 2;
 
-    console.log(a); // can see out scope
-    console.log(b); // can see own scope
-    console.log(c); // can see global scope
-  }
+//     console.log(a); // can see out scope
+//     console.log(b); // can see own scope
+//     console.log(c); // can see global scope
+//   }
 
-  console.log(a); // can see own scope
-  console.log(c); // can see global scope
-  console.log(b);
-}
+//   console.log(a); // can see own scope
+//   console.log(c); // can see global scope
+//   console.log(b);
+// }
+
+//=======================================
+// Naming conflicts
+
+// const result = "kyle";
+
+// function sayHi(name) {
+//   const result = "Hi" + name;
+//   console.log(result);
+// }
+
+// sayHi("Kyle");
+// console.log(result);
+
+//========================================
+
+// const a = 1;
+// const name = "kyle";
+
+// function myFunction() {
+//   const a = 2;
+
+//   console.log(a);
+//   console.log(name);
+// }
+
+// myFunction();
