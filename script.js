@@ -21,3 +21,13 @@
 // console.log(1 !== "1")
 
 //==================  The Exception: null and undefined
+
+// Double equal should be avoided to not get into un-
+// expented type coercion issues.
+
+console.log(null == null); // true
+console.log(null == undefined)
+
+console.log(null === null)
+
+console.log(null === undefined)
