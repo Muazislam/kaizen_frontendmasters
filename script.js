@@ -1,34 +1,18 @@
-// =================  Type Coercion  =================
+// ===== NaN (Not a Number) ======
 
-// ============== Expllcit Type Coercion ===============
+// When a person tries to convert a letter into number
+const result = parseInt("Hello");
 
-let a = 4;
-let b = "2";
+console.log(result);
+console.log(typeof result);
 
-let c = a + b; // this gives 42 string.
-console.log(c);
+// Nan is not false. In Javascript, it is not considered to be false
 
-let d = a + parseInt(b); // this adds the number
-console.log(d);
+console.log(result == NaN); // nan is never equal to anything
 
-//============Parce INT vs Parse FLOAT
+const a = parseInt("Hello")
+const b = 3
 
-let decimal = "1.4";
-
-console.log(parseInt(decimal));
-console.log(parseFloat(decimal));
-
-//==============Number to string
-
-let number = 3.233;
-
-const stringNum = number.toString();
-
-console.log(stringNum);
-console.log(typeof stringNum);
-
-// ============== Implicit Type Coercion ===============
-
-console.log(a - b); //string is automatically converted to number for subtraction. Because the + sign signals concatenation first
-console.log(a*b)
-console.log(a + b) // THe + sign triggers concatenation. Unless the coder tells it to treatstring as number.
+// The correct way to check  
+console.log(isNaN (a))
+console.log(isNan(b))
