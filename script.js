@@ -41,3 +41,17 @@ function sayHi() {
 }
 
 sayHi();
+
+//======================================
+
+function myFunction() {
+  const x = 3; //New block scope
+}
+
+if (true) {
+  const x = 1; // New block scope
+}
+
+{
+  const x = 2; // New block scope
+}
