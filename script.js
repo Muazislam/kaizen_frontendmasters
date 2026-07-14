@@ -34,3 +34,14 @@
 // console.log(numbers[1])
 // console.log(numbers[3])
 
+//==========================================
+
+const data = [`mujtaba`, `hunan`, `mirzada`]
+
+console.log(data)
+
+data.push(`baist`)
+console.log(data)
+
+data.push(`sheraz`)
+console.log(data)
