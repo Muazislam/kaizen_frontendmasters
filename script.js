@@ -58,3 +58,13 @@ console.log(mixedArray[3])
 console.log(mixedArray[4])
 console.log(mixedArray[0])
 console.log(mixedArray[1])
+
+// ============  Array Length =============
+
+console.log(mixedArray.length)
+console.log(mixedArray.length)
+
+const empty = []
+console.log(empty.length)
+
+
