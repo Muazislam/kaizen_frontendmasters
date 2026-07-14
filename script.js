@@ -51,20 +51,30 @@
 
 // ========== Mixed Data Types =============
 
-const mixedArray = [1, `hello`, 3.14, null, NaN]
+// const mixedArray = [1, `hello`, 3.14, null, NaN]
 
-console.log(mixedArray)
-console.log(mixedArray[3])
-console.log(mixedArray[4])
-console.log(mixedArray[0])
-console.log(mixedArray[1])
+// console.log(mixedArray)
+// console.log(mixedArray[3])
+// console.log(mixedArray[4])
+// console.log(mixedArray[0])
+// console.log(mixedArray[1])
 
-// ============  Array Length =============
+// // ============  Array Length =============
 
-console.log(mixedArray.length)
-console.log(mixedArray.length)
+// console.log(mixedArray.length)
+// console.log(mixedArray.length)
 
-const empty = []
-console.log(empty.length)
+// const empty = []
+// console.log(empty.length)
 
 
+
+// =============== Nested Arrays =============
+
+const nestedArray = [
+    [`A`, `B`], //0
+    [`C`, `D`], //1
+]
+
+console.log(nestedArray[1])
+console.log(nestedArray[0])
