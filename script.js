@@ -36,12 +36,25 @@
 
 //==========================================
 
-const data = [`mujtaba`, `hunan`, `mirzada`]
+// ====== Adding Elements to Arrays  =====
+// const data = [`mujtaba`, `hunan`, `mirzada`]
 
-console.log(data)
+// console.log(data)
 
-data.push(`baist`)
-console.log(data)
+// data.push(`baist`)
+// console.log(data)
 
-data.push(`sheraz`)
-console.log(data)
+// data.push(`sheraz`)
+// console.log(data)
+
+// ========================================
+
+// ========== Mixed Data Types =============
+
+const mixedArray = [1, `hello`, 3.14, null, NaN]
+
+console.log(mixedArray)
+console.log(mixedArray[3])
+console.log(mixedArray[4])
+console.log(mixedArray[0])
+console.log(mixedArray[1])
