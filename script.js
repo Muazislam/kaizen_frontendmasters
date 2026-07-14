@@ -1,33 +1,30 @@
-// =========== Equality check ==============
+// ===============  Arrays  ====================
 
-// THe   ==  makes type coercion
-// console.log(1 == "1"); // true (converts string "1" to number 1)
+// // single value\\
+// let numver = 5;
+// let nameOne = "Kyle";
 
-// console.log(0 == false);
-// console.log(" " == false);
-// console.log(1 == "2"); //Falso because after type coercion, js checks the values to be the same or not
+// // Multiple values in an array
+// const number = [1, 2, 3, 4, 5];
+// const name = ["Kyle", "Sarah"];
+// const boolean = [true, false, true];
 
-//================= Triple Equals === - No Type Coercion
-// console.log(1 === 1);
-// console.log(1 === "1");
-// console.log(0 === "false");
-// console.log("" === false);
+// console.log(number);
+// console.log(name);
+// console.log(boolean);
 
-//==================  Not Equals: != vs !==
+// =================================
 
-//Here, 1 was not equal to "1". So.
-// the != pr !== gives opposite of what the real check value is
-// console.log(1 != "1")
-// console.log(1 !== "1")
+// creating array uses square brackets
 
-//==================  The Exception: null and undefined
+// const letters = ["a", "b", "s", `d`, `dsa`]
 
-// Double equal should be avoided to not get into un-
-// expented type coercion issues.
+// const longList = [ // format array on multiple lines for increase in readability
+//     `muaz`,
+//     `sheraz`,
+//     `Basit`,
+//     `Abdul Moiz`,
+// ]
 
-console.log(null == null); // true
-console.log(null == undefined)
+// console.log (longList)
 
-console.log(null === null)
-
-console.log(null === undefined)
