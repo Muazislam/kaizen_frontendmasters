@@ -67,14 +67,27 @@
 // const empty = []
 // console.log(empty.length)
 
-
-
 // =============== Nested Arrays =============
 
 const nestedArray = [
-    [`A`, `B`], //0
-    [`C`, `D`], //1
-]
+  [`A`, `B`], //0
+  [`C`, `D`], //1
+];
 
-console.log(nestedArray[1])
-console.log(nestedArray[0])
+console.log(nestedArray[1]);
+console.log(nestedArray[0]);
+
+// ======  Accessing Nested Elements  ========
+
+const grid = [
+  [1, 2, 3, 0],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+console.log(grid[0]);
+console.log(grid[0][3]);
+console.log(grid[0][2]);
+console.log(grid[0][1]);
+
+console.log(grid[1][2]);
