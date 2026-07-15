@@ -44,18 +44,29 @@
 
 // ====== const with References =====
 
-const arr = [1,2] // The arr (array) is being pointed to data
-                  // [1,2] and the const keyword creates
-                  // a strong condition that it won't change
-                  // it's value (reference) point (memory location)
-                  // ----
-                  // Therefore, we can modify the data(values) only at
-                  // that memory location. But modifying the memory 
-                  // location, by assigning-a-new-value(change in memory
-                  // location) is prohibited
+// const arr = [1,2] // The arr (array) is being pointed to data
+//                   // [1,2] and the const keyword creates
+//                   // a strong condition that it won't change
+//                   // it's value (reference) point (memory location)
+//                   // ----
+//                   // Therefore, we can modify the data(values) only at
+//                   // that memory location. But modifying the memory
+//                   // location, by assigning-a-new-value(change in memory
+//                   // location) is prohibited
 
-arr.push(3)
-console.log(arr) // [1,2,3]
+// arr.push(3)
+// console.log(arr) // [1,2,3]
 
-arr = [4,5]     // ❌ TypeError: Assignment to constant variable
-arr = [1,2]
+// arr = [4,5]     // ❌ TypeError: Assignment to constant variable
+// arr = [1,2]
+
+// ========  Functions and References  ==========
+
+const addElement = (array, element) => {
+  array.push(element);
+};
+
+const numbers = [1,2,3]
+addElement(numbers, 4)
+
+console.log(numbers)
