@@ -55,3 +55,10 @@ console.log(bioData.muaz()); // correct way to call the funcition inside object
 
 // ==== Real-World Example: console.log ====
 
+console.log("Hello"); //console is an object, log is the message
+
+const console = {
+  log(message) {
+    // Display the message
+  },
+};
