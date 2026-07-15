@@ -17,18 +17,41 @@
 
 // ===== Adding Functions to Objects =====
 
+// const bioData = {
+//   name: "muaz",
+//   age: 21,
+//   favourtieFood: `chocolate`,
+//   education: `Bachelors`,
+
+//   muazIs: function () {
+//     console.log(`Hi`);
+//   },
+//   muaz: () => console.log(`hi`),
+// };
+
+// console.log(bioData.muaz); // wrong way to call function in object ""without putting paranthesis"""
+// console.log(bioData.muazIs); // wrong way to call function in object ""without putting paranthesis"""
+// console.log(bioData.muaz()); // correct way to call the funcition inside object
+
+// ==== Shorthand Function Syntax ====
+
 const bioData = {
   name: "muaz",
   age: 21,
   favourtieFood: `chocolate`,
   education: `Bachelors`,
 
-  muazIs: function () {
+  muazIs() {
     console.log(`Hi`);
   },
-  muaz: () => console.log(`hi`),
+  muaz() {
+    console.log(`hi`);
+  },
 };
 
 console.log(bioData.muaz); // wrong way to call function in object ""without putting paranthesis"""
 console.log(bioData.muazIs); // wrong way to call function in object ""without putting paranthesis"""
 console.log(bioData.muaz()); // correct way to call the funcition inside object
+
+// ==== Real-World Example: console.log ====
+
