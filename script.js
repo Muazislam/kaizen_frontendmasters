@@ -40,3 +40,10 @@
 // }
 
 
+// ------> NOT (!) - Reverses the condition
+
+const isLoggedIn = false // (!false = true)
+if(!isLoggedIn) { //(!isLoggedIn = IsLoggedIn) ----> True
+    console.log("Please log in")  // This runs because !false is true
+}
+
