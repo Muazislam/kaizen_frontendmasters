@@ -18,22 +18,33 @@
 
 // ==== Classes  ====
 
-class Person {
-  constructor(name, age) {
-    // this = {name: 'muaz'}
-    this.name = name;
-    this.age = age;
-    // return this (automatic)
-  }
-  greet() {
-    console.log(`Hello, my name is ${this.name}`);
-  }
-}
+// class Person {
+//   constructor(name, age) {
+//     // this = {name: 'muaz'}
+//     this.name = name;
+//     this.age = age;
+//     // return this (automatic)
+//   }
+//   greet() {
+//     console.log(`Hello, my name is ${this.name}`);
+//   }
+// }
 
-const muaz = new Person("Muaz", 21);
-const basitAli = new Person("Basit Ali", 19);
-const abdulMoiz = new Person("Abdul Moiz", 17);
+// const muaz = new Person("Muaz", 21);
+// const basitAli = new Person("Basit Ali", 19);
+// const abdulMoiz = new Person("Abdul Moiz", 17);
 
-muaz.greet();
-basitAli.greet();
-abdulMoiz.greet();
+// muaz.greet();
+// basitAli.greet();
+// abdulMoiz.greet();
+
+// ==== Built-in Examples ====
+
+const now = new Date();
+console.log(now);
+
+// Date use this internally
+
+console.log(now.getMonth());
+console.log(now.getDay());
+console.log(now.getDate());
