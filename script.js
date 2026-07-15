@@ -47,3 +47,14 @@ if(!isLoggedIn) { //(!isLoggedIn = IsLoggedIn) ----> True
     console.log("Please log in")  // This runs because !false is true
 }
 
+
+const name = `Kyle`
+
+if(name) {
+    console.log(`Hello ${name}!`)
+}
+
+const emptyString = ``
+if(emptyString) {
+    console.log(`This won't run`)
+}
