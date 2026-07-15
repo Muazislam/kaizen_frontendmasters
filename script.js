@@ -1,11 +1,13 @@
-// ==========  Object practise  ==============
+// ======== Advanced Variables Reference vs Value ============
 
-// const book = {
-//   title: "Muaz life",
-//   author: {
-//     firstName: "Muaz",
-//     lastName: "Islam Babar",
-//   },
-//   yearPublished: 2030,
-//   publish: () => console.log(`Publishing Muaz's book`),
-// };
+const c = [1, 2];
+const d = c;
+
+d.push(3);
+// Using references, we can modify an array or variable
+// without implementing changes directly on them
+// This is a convenient way to implement changes
+// to a huge array without needing to call each
+// index. but we can make changes
+// with just a seperate 1 variable to the whole game
+console.log(c);
