@@ -25,3 +25,17 @@
 
 // ========  ============  ===========  ==========
 
+// ==== Objects Working with reference ====
+
+// let person1 = { name: "Kyle" }
+// let person2 = person1 // Same reference
+
+// person2.name = "Joe"
+
+// console.log(person1.name) // "Joe" ← Changed!
+// console.log(person2.name) // "Joe" ← Same object
+// console.log(person1 === person2) // true ← Same reference
+
+// // But creating a new object:
+// const person3 = { name: "Joe" }
+// console.log(person1 === person3) // false ← Different references
