@@ -39,14 +39,12 @@
 //     console.log("No work today")
 // }
 
-
 // ------> NOT (!) - Reverses the condition
 
 // const isLoggedIn = false // (!false = true)
 // if(!isLoggedIn) { //(!isLoggedIn = IsLoggedIn) ----> True
 //     console.log("Please log in")  // This runs because !false is true
 // }
-
 
 // const name = `Kyle`
 
@@ -59,20 +57,33 @@
 //     console.log(`This won't run`)
 // }
 
-
 // -------> Nested If Statements
 
-const weather = `sunny`
-const temperature = 75
+const weather = `sunny`;
+const temperature = 75;
 
-if (weather === `sunny`) {
-    //=====> Nested if statment layer 1
-    if(temperature > 70) {
-        console.log(`Perfect day for the beach!`)
-    } else {
-        console.log(`Sunny but a bit cold`)
+// if (weather === `sunny`) {
+//     //=====> Nested if statment layer 1
+//     if(temperature > 70) {
+//         console.log(`Perfect day for the beach!`)
+//     } else {
+//         console.log(`Sunny but a bit cold`)
+//     }
+//     //=====> Nested if statment layer 1 <end>
+// } else {
+//     console.log(`Not a sunny day`)
+// }
+
+// ----------> Guard Clauses
+const checkWeature = (weather, temperature) => {
+    if (weather !== "sunny") {
+        console.log("Not a sunny day")
+        return //Exit early
     }
-    //=====> Nested if statment layer 1 <end>
-} else {
-    console.log(`Not a sunny day`)
+
+    if (temperature > 70) {
+        console.log(`Perfect day for the beach!`); // This will run
+    } else {
+        console.log(`Sunny but a bit cold`);
+    }
 }
