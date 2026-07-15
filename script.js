@@ -59,8 +59,8 @@
 
 // -------> Nested If Statements
 
-const weather = `sunny`;
-const temperature = 75;
+// const weather = `good`;
+// const temperature = 75;
 
 // if (weather === `sunny`) {
 //     //=====> Nested if statment layer 1
@@ -75,15 +75,19 @@ const temperature = 75;
 // }
 
 // ----------> Guard Clauses
-const checkWeature = (weather, temperature) => {
-    if (weather !== "sunny") {
-        console.log("Not a sunny day")
-        return //Exit early
-    }
 
-    if (temperature > 70) {
-        console.log(`Perfect day for the beach!`); // This will run
-    } else {
-        console.log(`Sunny but a bit cold`);
-    }
-}
+
+const checkWeature = (weather, temperature) => {
+  if (weather !== "sunny") {
+    console.log("Not a sunny day");
+    return; //Exit early
+  }
+
+  if (temperature > 70) {
+    console.log(`Perfect day for the beach!`); // This will run
+  } else {
+    console.log(`Sunny but a bit cold`);
+  }
+};
+
+checkWeature('cold', 77)
