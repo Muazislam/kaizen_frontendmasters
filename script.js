@@ -22,11 +22,21 @@
 //   console.log("It's cold!")
 // }
 
-// -------> AND (&&) - Both conditions must be true
+//--------------> AND (&&) - Both conditions must be true
+// const age = 25
+// const hasLicense = true
 
-const age = 25
-const hasLicense = true
+// if (age >= 18 && hasLicense) {
+//   console.log("You can drive!") // Both conditions are true
+// }
 
-if (age >= 18 && hasLicense) {
-    console.log("You can drive")
-}
+// -------> OR (||) - At least one condition must be true
+
+// const isWeekend = 25
+// const isHoliday = true
+
+// if (isWeekend || isHoliday) {
+//     console.log("No work today")
+// }
+
+
