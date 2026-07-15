@@ -14,3 +14,14 @@
 // // with just a seperate 1 variable to the whole game
 // console.log(c);
 
+// ========  ============  ===========  ==========
+
+// When we can see reference are all equal
+
+// const a = [1, 2];
+// const b = a; // same reference!
+
+// console.log(a === b); // true <-- Both point at same memory locaton
+
+// ========  ============  ===========  ==========
+
