@@ -92,13 +92,13 @@
 // checkWeature('cold', 77)
 
 // --------> Exercise
-let age = 1
-let driverEducation = false
+let age = 17;
+let needDriverEducation = false;
 
-if (age >= 16 && driverEducation) {
-  console.log(`You can get the liscense`);
-} else if (age < 16) {
+if (age < 16) {
   console.log(`You must be at least 16`);
-} else if (driverEducation) {
+} else if (!needDriverEducation) {
   console.log(`You need to complete driver's education`);
+} else {
+  console.log(`You can get your liscense`);
 }
