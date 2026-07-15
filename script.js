@@ -76,18 +76,29 @@
 
 // ----------> Guard Clauses
 
+// const checkWeature = (weather, temperature) => {
+//   if (weather !== "sunny") {
+//     console.log("Not a sunny day");
+//     return; //Exit early
+//   }
 
-const checkWeature = (weather, temperature) => {
-  if (weather !== "sunny") {
-    console.log("Not a sunny day");
-    return; //Exit early
-  }
+//   if (temperature > 70) {
+//     console.log(`Perfect day for the beach!`); // This will run
+//   } else {
+//     console.log(`Sunny but a bit cold`);
+//   }
+// };
 
-  if (temperature > 70) {
-    console.log(`Perfect day for the beach!`); // This will run
-  } else {
-    console.log(`Sunny but a bit cold`);
-  }
-};
+// checkWeature('cold', 77)
 
-checkWeature('cold', 77)
+// --------> Exercise
+let age = 1
+let driverEducation = false
+
+if (age >= 16 && driverEducation) {
+  console.log(`You can get the liscense`);
+} else if (age < 16) {
+  console.log(`You must be at least 16`);
+} else if (driverEducation) {
+  console.log(`You need to complete driver's education`);
+}
