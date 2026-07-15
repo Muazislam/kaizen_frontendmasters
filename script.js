@@ -1,50 +1,26 @@
-// ==== `This` keyword _ && _ classes ====
+// ==== If Statements ====
 
-// console.log(this) // In the browser, this by default sets the refers to the window object
+// const age = 18
 
-// ==== this With Objects ====
-// const person = {
-//   name: `Alice`,
-//   age: 25,
-//   greet() {
-//     console.log(`Hello, my name is ${this.name}`);
-//   },
-// };
-
-// person.greet();
-// `this` is used inside the object to refer to the object itself
-// This is useful for accessing properties of the
-//  object from within its methods.
-
-// ==== Classes  ====
-
-// class Person {
-//   constructor(name, age) {
-//     // this = {name: 'muaz'}
-//     this.name = name;
-//     this.age = age;
-//     // return this (automatic)
-//   }
-//   greet() {
-//     console.log(`Hello, my name is ${this.name}`);
-//   }
+// if (age >= 18) {
+//   console.log("You can vote!") // This will run
 // }
 
-// const muaz = new Person("Muaz", 21);
-// const basitAli = new Person("Basit Ali", 19);
-// const abdulMoiz = new Person("Abdul Moiz", 17);
+// console.log("Program continues...") // This always runs
 
-// muaz.greet();
-// basitAli.greet();
-// abdulMoiz.greet();
+// -------> Multiple Conditions with Else If
 
-// ==== Built-in Examples ====
+// const temperature = 75
 
-const now = new Date();
-console.log(now);
+// if (temperature > 80) {
+//   console.log("It's hot outside!")
+// } else if (temperature > 60) {
+//   console.log("Perfect weather!") // This will run
+// } else if (temperature > 40) {
+//   console.log("It's a bit chilly")
+// } else {
+//   console.log("It's cold!")
+// }
 
-// Date use this internally
+// -------> AND (&&) - Both conditions must be true
 
-console.log(now.getMonth());
-console.log(now.getDay());
-console.log(now.getDate());
