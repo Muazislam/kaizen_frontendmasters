@@ -129,8 +129,14 @@
 
 // ===== Exercise  ======
 let arr = []
+let sum = 0
 for (let i = 0; i <= 10; i+=2) {
-  
   arr.push(i)
 }
 console.log(arr)
+
+for(let j = 0; j < arr.length; j++) {
+    sum = sum + arr[j]
+  }
+
+console.log(sum)
