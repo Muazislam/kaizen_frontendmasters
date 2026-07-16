@@ -59,27 +59,68 @@
 
 //====  Creating Scope with Curly Braces  ====
 
-const action = `Login`;
+// const action = `Login`;
 
-switch (action) {
-  case `Login`: {
-    const a = 1;
-    console.log(a);
-    console.log(`System loged In`);
-    break;
+// switch (action) {
+//   case `Login`: {
+//     const a = 1;
+//     console.log(a);
+//     console.log(`System loged In`);
+//     break;
+//   }
+//   case `Restart`: {
+//     const a = 2;
+//     console.log(a);
+//     console.log(`System Restart`);
+//     break;
+//   }
+//   case `Shut Down`: {
+//     const a = 3;
+//     console.log(a);
+//     console.log(`System shutdown`);
+//     break;
+//   }
+//   default:
+//     console.log(`Where is my PC`);
+// }
+
+// ============================================
+
+// ============================================
+
+//====  Exercise  ====
+
+const monthNumber = 9;
+
+switch (monthNumber) {
+  case 12: {
+    const month = `December`;
   }
-  case `Restart`: {
-    const a = 2;
-    console.log(a);
-    console.log(`System Restart`);
-    break;
+  case 1: {
+    const month = `January`;
   }
-  case `Shut Down`: {
-    const a = 3;
-    console.log(a);
-    console.log(`System shutdown`);
+  case 2:
+    {
+      const month = `Feburary`;
+    }
+    console.log(`This month brings winter`);
     break;
-  }
-  default:
-    console.log(`Where is my PC`);
+
+  case 3:
+  case 4:
+  case 5:
+    console.log(`This month brings spring`);
+    break;
+
+  case 6:
+  case 7:
+  case 8:
+    console.log(`This brings Summer`);
+    break;
+
+  case 9:
+  case 10:
+  case 11:
+    console.log(`This brings Fall`);
+    break;
 }
