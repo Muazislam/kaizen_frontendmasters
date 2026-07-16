@@ -41,8 +41,26 @@
 
 // ==== Iterating Through Arrays ====
 
-const fruits = [`apple`, `banana`, `orange`, `tangarange`];
+// const fruits = [`apple`, `banana`, `orange`, `tangarange`];
 
-for (let i = 0; i <= 3; i++) {
-  console.log(`${i}: ${fruits[i]}`);
-}
+// for (let i = 0; i <= 3; i++) {
+//   console.log(`${i}: ${fruits[i]}`);
+// }
+
+// -----------------------------------
+// ===================================
+// -----------------------------------
+
+// ==== Nested For Loops ====
+
+// for (let i = 1; i <= 3; i++) {
+//   for (let j = 1; j <= 3; j++) {
+//     console.log(`${i} x ${j} = ${i * j}`)
+//   }
+// }
+
+// for (let m = 0; m <= 3; m++) {
+//   for (let p = 0; p <= 3; p++) {
+//     console.log(`${m} x ${p} = ${m * p}`)
+//   }
+// }
