@@ -3,11 +3,11 @@
 // ====  Basic For Loop Syntax  ====
 
 // let i = 0     // Step1
-for (let i = 0; i < 5; i++) {
-  // Step 0
-  console.log(`Count ${i}`); // Step 2
-  // i++  // Step 3
-}
+// for (let i = 0; i < 5; i++) {
+//   // Step 0
+//   console.log(`Count ${i}`); // Step 2
+//   // i++  // Step 3
+// }
 
 // -----------------------------------
 // ===================================
@@ -15,6 +15,22 @@ for (let i = 0; i < 5; i++) {
 
 // ==== Simple Counting Example ====
 
-for (let n = 0; n < 60; n++) {
-  console.log(`Hi`);
+// for (let n = 0; n < 60; n++) {
+//   console.log(`Hi`);
+// }
+
+// -----------------------------------
+// ===================================
+// -----------------------------------
+
+// ==== Common Loop Patterns Skip Numbers ====
+
+for (let i = 0; i <= 10; i += 2) {  // i = i + 2
+                                    // i = 4 + 2 = 6
+  console.log(i);
+}
+
+// ==== Count down from 10 to 1 ====
+for (let i = 10; i >= 1; i--) {
+  console.log(i)
 }
