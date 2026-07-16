@@ -108,20 +108,29 @@
 
 // ----------> For...of Loop (for arrays)
 
-const fruits = ["apple", "banana", "orange"];
+// const fruits = ["apple", "banana", "orange"];
 
-for (const fruit of fruits) {
-  console.log(fruit);
+// for (const fruit of fruits) {
+//   console.log(fruit);
+// }
+
+// // ----------> For...in Loop (for object properties)
+
+// const person = {
+//   name: `Muaz`,
+//   age: 21,
+//   birthday: `25-December-04`,
+// };
+
+// for (const key in person) {
+//   console.log(`${key}: ${person[key]}`)
+// }
+
+
+// ===== Exercise  ======
+let arr = []
+for (let i = 0; i <= 10; i+=2) {
+  
+  arr.push(i)
 }
-
-// ----------> For...in Loop (for object properties)
-
-const person = {
-  name: `Muaz`,
-  age: 21,
-  birthday: `25-December-04`,
-};
-
-for (const key in person) {
-  console.log(`${key}: ${person[key]}`)
-}
+console.log(arr)
