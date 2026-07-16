@@ -90,37 +90,73 @@
 
 //====  Exercise  ====
 
-const monthNumber = 9;
+// const monthNumber = 9;
 
-switch (monthNumber) {
-  case 12: {
-    const month = `December`;
+// switch (monthNumber) {
+//   case 12: {
+//     const month = `December`;
+//   }
+//   case 1: {
+//     const month = `January`;
+//   }
+//   case 2:
+//     {
+//       const month = `Feburary`;
+//     }
+//     console.log(`This month brings winter`);
+//     break;
+
+//   case 3:
+//   case 4:
+//   case 5:
+//     console.log(`This month brings spring`);
+//     break;
+
+//   case 6:
+//   case 7:
+//   case 8:
+//     console.log(`This brings Summer`);
+//     break;
+
+//   case 9:
+//   case 10:
+//   case 11:
+//     console.log(`This brings Fall`);
+//     break;
+// }
+
+// ============================================
+
+// ============================================
+
+//====  Exercise  ====
+
+const getSeason = (month) => {
+  switch (month) {
+    case 12:
+    case 1:
+    case 2:
+      return `Winter`;
+
+    case 3:
+    case 4:
+    case 5:
+      return `spring`;
+
+    case 6:
+    case 7:
+    case 8:
+      return `Summer`;
+
+    case 9:
+    case 10:
+    case 11:
+      return `Fall`;
+
+    default:
+      return `Invalid Month`;
   }
-  case 1: {
-    const month = `January`;
-  }
-  case 2:
-    {
-      const month = `Feburary`;
-    }
-    console.log(`This month brings winter`);
-    break;
+};
 
-  case 3:
-  case 4:
-  case 5:
-    console.log(`This month brings spring`);
-    break;
-
-  case 6:
-  case 7:
-  case 8:
-    console.log(`This brings Summer`);
-    break;
-
-  case 9:
-  case 10:
-  case 11:
-    console.log(`This brings Fall`);
-    break;
-}
+console.log(getSeason(2));
+console.log(getSeason(13));
