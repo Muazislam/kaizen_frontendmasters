@@ -1,48 +1,18 @@
-// --------->  Ternary Operator
+// ===== Switch Statment =======
 
-// ========>    Basic Syntax
+const favoriteAnimal = ``
 
-/*
-const age = 18
-age >= 18 ? `trueValue` : `falseValue`
-*/
+switch (favoriteAnimal) {
+  case `cat`:
+    console.log('Cats are so cute')
+    break
+  case `dog`:
+    console.log('dogs are brave and loyal')
+    break
+  case `horse`:
+    console.log(`horse is a true friend. It's been with man for ages`)
+    break
+  default:
+    console.log('I love all animals')
 
-// ? is like an if
-// : is as else
-// if the condition before ? is true, it
-// returns the value after the ?
-// otherwise, it returns the value after the :
-
-//======== ============== ==============
-
-//======== ============== ==============
-
-//========>    Ternaries Return Values
-
-let message
-if(age >= 18){
-    message = `You can vote`
-} else {
-    message = `You cannot vote`
-}
-
-// Ternary operator implementation
-
-const message = age >= 18 ? `You can vote` : `You cannot vote`
-
-
-// --------> Chaining Ternary Operators
-
-const grad = score >= 90 ? `A` : score >= 80 ? `B` : score >= 70 ? `C` : `F`
-
-// If-else is clearer
-let grade
-if (score >= 90) {
-  grade = "A"
-} else if (score >= 80) {
-  grade = "B"
-} else if (score >= 70) {
-  grade = "C"
-} else {
-  grade = "F"
 }
