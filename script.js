@@ -33,22 +33,53 @@
 
 // ---------> Advance feature of switch statment
 
-const weekday = `Saturday`;
+// const weekday = `Saturday`;
 
-switch (weekday) {
-  case `Monday`:
-  case `Tuesday`:
-  case `Wednesday`:
-  case `Thursday`:
-  case `Friday`:
-    console.log(`This is my work week`);
+// switch (weekday) {
+//   case `Monday`:
+//   case `Tuesday`:
+//   case `Wednesday`:
+//   case `Thursday`:
+//   case `Friday`:
+//     console.log(`This is my work week`);
+//     break;
+//   case `Saturday`:
+//     console.log(`This is the time I should spend with my family`);
+//     break;
+//   case `Sunday`:
+//     console.log(`I should write my journal of the week and write my goals for the week`)
+//     break;
+//   default:
+//     console.log(`I should see which day it is!`)
+//   }
+
+// ============================================
+
+// ============================================
+
+//====  Creating Scope with Curly Braces  ====
+
+const action = `Login`;
+
+switch (action) {
+  case `Login`: {
+    const a = 1;
+    console.log(a);
+    console.log(`System loged In`);
     break;
-  case `Saturday`:
-    console.log(`This is the time I should spend with my family`);
-    break;
-  case `Sunday`:
-    console.log(`I should write my journal of the week and write my goals for the week`)
-    break;
-  default:
-    console.log(`I should see which day it is!`)
   }
+  case `Restart`: {
+    const a = 2;
+    console.log(a);
+    console.log(`System Restart`);
+    break;
+  }
+  case `Shut Down`: {
+    const a = 3;
+    console.log(a);
+    console.log(`System shutdown`);
+    break;
+  }
+  default:
+    console.log(`Where is my PC`);
+}
