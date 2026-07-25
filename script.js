@@ -28,7 +28,7 @@ class Counter {
 
   getCount() {
     return this.#count;
-    // this is a funciton or method that specifically returns the value to the 
+    // this is a funciton or method that specifically returns the value to the
   }
 }
 
@@ -40,4 +40,28 @@ console.log(c.#count);
 // the bottom prints the result of the private method so, it is not printed.
 // is the private a class within a class?
 
+// <<=======================>>
+// <<       Node class       >>
+// <<=======================>>
 
+class Node {
+  #data;
+  #nextRef;
+
+  constructor(x) {
+    this.#data = x;
+    this.#nextRef = null; // no next code yet
+  }
+
+  getData() {
+    return this.#data;
+  }
+
+  getNext() {
+    return this.#nextRef;
+  }
+
+  setNext(node) {
+    this.#nextRef = node;
+  }
+}
