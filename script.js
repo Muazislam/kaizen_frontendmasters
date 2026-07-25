@@ -12,3 +12,24 @@ class Person {
 
 const p = new Person("Alex");
 p.greet(); // Hi, I'm Alex
+
+// Creating private class in js
+// Private classes are internal data that is hidden from the outside
+// And only the defined methods can access it
+
+class Counter {
+  #count = 0;       // private -- can't be accessed outside this class
+
+  increment() {
+    this.#count++;
+  }
+
+  getCount() {
+    return this.#count;
+  }
+}
+
+const c = new Counter();
+c.increment();
+console.log(c.getCount());
+console.log(c.#count);
