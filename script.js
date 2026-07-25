@@ -65,3 +65,21 @@ class Node {
     this.#nextRef = node;
   }
 }
+
+// <<=======================>>
+// <<       List class       >>
+// <<=======================>>
+
+class List {
+  #head;
+  #current;
+
+  constructor() {
+    this.#head = null;
+    this.#current = null;
+  }
+
+  getCurrent() {
+    return this.#current;
+  }
+}
