@@ -83,3 +83,16 @@ class List {
     return this.#current;
   }
 }
+
+// <<=======================>>
+// <<  Adding the first node  >>
+// <<=======================>>
+
+const list = new List();
+
+const newNode = new Node(1);
+list.head = newNode;
+list.current = newNode;
+
+const newNode2 = new Node(2);
+list.head.setNext(list.current.getNext());
