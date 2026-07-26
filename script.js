@@ -88,11 +88,27 @@ class List {
 // <<  Adding the first node  >>
 // <<=======================>>
 
+class List {
+  #head;
+  #current;
+
+  constructor() {
+    this.#head = null;
+    this.#current = null;
+  }
+
+  setHead(node) {
+    this.#head = node;
+  }
+  setCurrent(node) {
+    this.#current = node;
+  }
+  getCurrent() {
+    return this.#current;
+  }
+}
+
 const list = new List();
-
 const newNode = new Node(1);
-list.head = newNode;
-list.current = newNode;
-
-const newNode2 = new Node(2);
-list.head.setNext(list.current.getNext());
+list.setHead(newNode);
+list.setCurrent(newNode);
